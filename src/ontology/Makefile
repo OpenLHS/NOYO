@@ -42,7 +42,7 @@ REPORT_LABEL =              -l true
 REPORT_PROFILE_OPTS =       
 OBO_FORMAT_OPTIONS =        
 SPARQL_VALIDATION_CHECKS =  owldef-self-reference iri-range label-with-iri multiple-replaced_by 
-SPARQL_EXPORTS =            base-classes-report 
+SPARQL_EXPORTS =            base-classes-report base-properties-report 
 ODK_VERSION_MAKEFILE =      v1.4
 
 TODAY ?=                    $(shell date +%Y-%m-%d)

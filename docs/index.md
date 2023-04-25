@@ -23,3 +23,12 @@ You can find descriptions of the standard ontology engineering workflows [here](
 |NOYO_0000009                                  |temporal characterization                |An information content entity that is about a one-dimension temporal region.                                                                                                                                                                     |
 |NOYO_0000015                                  |informational filler                     |An informational entity that fills an informational slot.                                                                                                                                                                                        |
 |NOYO_0000013                                  |statement                                |An informational entity that is considered valid by some agent at some point in time. (TBD)                                                                                                                                                      |
+
+
+## Properties
+
+|IRI                                           |value                                    |def|
+|----------------------------------------------|-----------------------------------------|---|
+|NOYO_0000016                                  |fills                                    |   |
+|NOYO_0000008                                  |is directed by                           |   |
+|NOYO_0000007                                  |directs                                  |   |
