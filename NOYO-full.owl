@@ -15,7 +15,10 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/NOYO/NOYO-full.owl">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/NOYO/releases/2023-04-25/NOYO-full.owl"/>
-        <terms:description>None</terms:description>
+        <dc:contributor xml:lang="en">Adrien Barton</dc:contributor>
+        <dc:contributor xml:lang="en">Jean-François Ethier</dc:contributor>
+        <dc:contributor xml:lang="en">Paul Fabry</dc:contributor>
+        <terms:description xml:lang="en">This ontology includes the base classes and properties (both external and locally created) used downstream by the others ontologies.</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <terms:title>GRIIS Core Ontology</terms:title>
         <owl:versionInfo>2023-04-25</owl:versionInfo>
@@ -991,6 +994,32 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <rdfs:label xml:lang="en">output of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http:/purl.obolibrary.org/obo/NOYO_0000007 -->
+
+    <owl:ObjectProperty rdf:about="http:/purl.obolibrary.org/obo/NOYO_0000007">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <owl:inverseOf rdf:resource="http:/purl.obolibrary.org/obo/NOYO_0000008"/>
+        <rdfs:label xml:lang="en">directs</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http:/purl.obolibrary.org/obo/NOYO_0000008 -->
+
+    <owl:ObjectProperty rdf:about="http:/purl.obolibrary.org/obo/NOYO_0000008">
+        <rdfs:label xml:lang="en">is directed by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http:/purl.obolibrary.org/obo/NOYO_0000016 -->
+
+    <owl:ObjectProperty rdf:about="http:/purl.obolibrary.org/obo/NOYO_0000016">
+        <rdfs:label xml:lang="en">fills</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2805,14 +2834,6 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NOYO_0000000 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOYO_0000000">
-        <rdfs:label xml:lang="en">root node</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
@@ -2863,6 +2884,175 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000117>GROUP: OBI Biomaterial Branch</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/Organism</obo:IAO_0000119>
         <rdfs:label xml:lang="en">organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http:/purl.obolibrary.org/obo/NOYO_0000001 -->
+
+    <owl:Class rdf:about="http:/purl.obolibrary.org/obo/NOYO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An information content entity representing the will of a person to have something done and specifications for the latter.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">request</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http:/purl.obolibrary.org/obo/NOYO_0000002 -->
+
+    <owl:Class rdf:about="http:/purl.obolibrary.org/obo/NOYO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity describing the processes a person or an organization is willing to perform, usually for a compensation.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">service offer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http:/purl.obolibrary.org/obo/NOYO_0000003 -->
+
+    <owl:Class rdf:about="http:/purl.obolibrary.org/obo/NOYO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that specifies a service agreement made between a request party and a service offer party. A service agreement specification can direct some processes that correspond to what has been agreed between the parties.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">service agreement specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http:/purl.obolibrary.org/obo/NOYO_0000004 -->
+
+    <owl:Class rdf:about="http:/purl.obolibrary.org/obo/NOYO_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is about the location of some entity. (TBD)</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">address</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http:/purl.obolibrary.org/obo/NOYO_0000005 -->
+
+    <owl:Class rdf:about="http:/purl.obolibrary.org/obo/NOYO_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                <owl:someValuesFrom rdf:resource="http:/purl.obolibrary.org/obo/NOYO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                <owl:someValuesFrom rdf:resource="http:/purl.obolibrary.org/obo/NOYO_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A planned process of interaction between a request party and a service offer party having as specified input some request and some service offer and that aims to generate as output a service agreement.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">service agreement negotiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http:/purl.obolibrary.org/obo/NOYO_0000006 -->
+
+    <owl:Class rdf:about="http:/purl.obolibrary.org/obo/NOYO_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http:/purl.obolibrary.org/obo/NOYO_0000008"/>
+                <owl:someValuesFrom rdf:resource="http:/purl.obolibrary.org/obo/NOYO_0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A planned process that aims at fulfilling the commitments of a service agreement.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">service delivery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http:/purl.obolibrary.org/obo/NOYO_0000009 -->
+
+    <owl:Class rdf:about="http:/purl.obolibrary.org/obo/NOYO_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is about a one-dimension temporal region.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">temporal characterization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http:/purl.obolibrary.org/obo/NOYO_0000010 -->
+
+    <owl:Class rdf:about="http:/purl.obolibrary.org/obo/NOYO_0000010">
+        <rdfs:subClassOf rdf:resource="http:/purl.obolibrary.org/obo/NOYO_0000009"/>
+        <obo:IAO_0000115 xml:lang="en">A temporal specification that is about the occupation of a temporal interval by some processes.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">process temporal characterization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http:/purl.obolibrary.org/obo/NOYO_0000011 -->
+
+    <owl:Class rdf:about="http:/purl.obolibrary.org/obo/NOYO_0000011">
+        <rdfs:subClassOf rdf:resource="http:/purl.obolibrary.org/obo/NOYO_0000009"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http:/purl.obolibrary.org/obo/NOYO_0000013"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A temporal characterization specifying a temporal region during which a statement is considered valid.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">statement validity temporal characterization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http:/purl.obolibrary.org/obo/NOYO_0000012 -->
+
+    <owl:Class rdf:about="http:/purl.obolibrary.org/obo/NOYO_0000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <obo:IAO_0000115 xml:lang="en">A generically dependent continuant that is a building block of information or a combination thereof.</obo:IAO_0000115>
+        <obo:IAO_0000600 xml:lang="en">Contrarily to ICE, informational entities are not necessarily about some things. Therefore they includes ICE, but also words like &apos;unicorn&apos;, letters like &apos;a&apos; or pictures of unicorns.</obo:IAO_0000600>
+        <rdfs:label xml:lang="en">informational entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http:/purl.obolibrary.org/obo/NOYO_0000013 -->
+
+    <owl:Class rdf:about="http:/purl.obolibrary.org/obo/NOYO_0000013">
+        <rdfs:subClassOf rdf:resource="http:/purl.obolibrary.org/obo/NOYO_0000012"/>
+        <obo:IAO_0000115 xml:lang="en">An informational entity that is considered valid by some agent at some point in time. (TBD)</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">statement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http:/purl.obolibrary.org/obo/NOYO_0000014 -->
+
+    <owl:Class rdf:about="http:/purl.obolibrary.org/obo/NOYO_0000014">
+        <rdfs:subClassOf rdf:resource="http:/purl.obolibrary.org/obo/NOYO_0000012"/>
+        <obo:IAO_0000112 xml:lang="en">A template for an academic journal article, a field in a form that is supposed to be filled by a last name, the position for &apos;a&apos; in the word &apos;cat&apos;, a position on a musical partition are all examples of informational slots.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An informational entity that can be filled by an informational filler.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">informational slot</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http:/purl.obolibrary.org/obo/NOYO_0000015 -->
+
+    <owl:Class rdf:about="http:/purl.obolibrary.org/obo/NOYO_0000015">
+        <rdfs:subClassOf rdf:resource="http:/purl.obolibrary.org/obo/NOYO_0000012"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http:/purl.obolibrary.org/obo/NOYO_0000016"/>
+                <owl:someValuesFrom rdf:resource="http:/purl.obolibrary.org/obo/NOYO_0000014"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">An academic journal article, the last name of a person, the letter &apos;a&apos;, a musical note are all examples of informational fillers.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An informational entity that fills an informational slot.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">informational filler</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
