@@ -1,0 +1,28 @@
+# PURL configuration for http://purl.obolibrary.org/obo/NOYO
+
+idspace: NOYO
+base_url: /obo/NOYO
+
+products:
+- NOYO.owl: https://raw.githubusercontent.com/OpenLHS/NOYO/main/NOYO.owl
+- NOYO.obo: https://raw.githubusercontent.com/OpenLHS/NOYO/main/NOYO.obo
+
+term_browser: ontobee
+example_terms:
+- NOYO_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/OpenLHS/NOYO/v
+
+- prefix: /tracker/
+  replacement: https://github.com/OpenLHS/NOYO/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/NOYO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/OpenLHS/NOYO/main/
+

@@ -1,0 +1,19 @@
+id: NOYO
+title: GRIIS Core Ontology
+github_org: OpenLHS
+repo: NOYO
+documentation:
+  documentation_system: mkdocs
+release_artefacts:
+  - full
+  - base
+primary_release: full
+export_formats:
+  - owl
+  - json
+import_group:
+  products:
+    - id: OntoImports
+      module_type: mirror
+      mirror_from: "https://raw.githubusercontent.com/OpenLHS/OntoImports/main/OntoImports.owl"
+robot_java_args: "-Xmx8G"
