@@ -25,9 +25,9 @@
         "val" : "GRIIS Core Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2023-04-25"
+        "val" : "2023-04-26"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/NOYO/releases/2023-04-25/NOYO-base.json"
+      "version" : "http://purl.obolibrary.org/obo/NOYO/releases/2023-04-26/NOYO-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.org/dc/terms/description",

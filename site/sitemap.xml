@@ -2,67 +2,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://OpenLHS.github.io/NOYO/</loc>
-         <lastmod>2023-04-25</lastmod>
+         <lastmod>2023-04-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://OpenLHS.github.io/NOYO/cite/</loc>
-         <lastmod>2023-04-25</lastmod>
+         <lastmod>2023-04-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://OpenLHS.github.io/NOYO/contributing/</loc>
-         <lastmod>2023-04-25</lastmod>
+         <lastmod>2023-04-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://OpenLHS.github.io/NOYO/odk-workflows/</loc>
-         <lastmod>2023-04-25</lastmod>
+         <lastmod>2023-04-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://OpenLHS.github.io/NOYO/odk-workflows/ContinuousIntegration/</loc>
-         <lastmod>2023-04-25</lastmod>
+         <lastmod>2023-04-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://OpenLHS.github.io/NOYO/odk-workflows/EditorsWorkflow/</loc>
-         <lastmod>2023-04-25</lastmod>
+         <lastmod>2023-04-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://OpenLHS.github.io/NOYO/odk-workflows/ManageDocumentation/</loc>
-         <lastmod>2023-04-25</lastmod>
+         <lastmod>2023-04-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://OpenLHS.github.io/NOYO/odk-workflows/ReleaseWorkflow/</loc>
-         <lastmod>2023-04-25</lastmod>
+         <lastmod>2023-04-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://OpenLHS.github.io/NOYO/odk-workflows/RepoManagement/</loc>
-         <lastmod>2023-04-25</lastmod>
+         <lastmod>2023-04-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://OpenLHS.github.io/NOYO/odk-workflows/RepositoryFileStructure/</loc>
-         <lastmod>2023-04-25</lastmod>
+         <lastmod>2023-04-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://OpenLHS.github.io/NOYO/odk-workflows/SettingUpDockerForODK/</loc>
-         <lastmod>2023-04-25</lastmod>
+         <lastmod>2023-04-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://OpenLHS.github.io/NOYO/odk-workflows/UpdateImports/</loc>
-         <lastmod>2023-04-25</lastmod>
+         <lastmod>2023-04-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://OpenLHS.github.io/NOYO/odk-workflows/components/</loc>
-         <lastmod>2023-04-25</lastmod>
+         <lastmod>2023-04-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
