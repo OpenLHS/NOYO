@@ -15,7 +15,7 @@ import_group:
   products:
     - id: OntoImports
       module_type: mirror
-      mirror_from: "https://raw.githubusercontent.com/OpenLHS/OntoImports/main/OntoImports.owl"
+      mirror_from: "https://raw.githubusercontent.com/OpenLHS/OntoImports/main/OntoImports-full.owl"
 robot_report:
   custom_sparql_exports:
     - base-classes-report

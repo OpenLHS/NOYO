@@ -350,7 +350,7 @@ IMP_LARGE=true # Global parameter to bypass handling of large imports
 .PHONY: mirror-OntoImports
 .PRECIOUS: $(MIRRORDIR)/OntoImports.owl
 mirror-OntoImports: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I https://raw.githubusercontent.com/OpenLHS/OntoImports/main/OntoImports.owl -o $@.tmp.owl &&\
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I https://raw.githubusercontent.com/OpenLHS/OntoImports/main/OntoImports-full.owl -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
