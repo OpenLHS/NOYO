@@ -14,7 +14,7 @@ Annotation(dce:contributor "Adrien Barton"@en)
 Annotation(dce:contributor "Jean-François Ethier"@en)
 Annotation(dce:contributor "Paul Fabry"@en)
 Annotation(dcterms:description "This ontology includes the base classes and properties (both external and locally created) used downstream by the others ontologies."@en)
-Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
+Annotation(dcterms:license <https://creativecommons.org/licenses/by/4.0/>)
 Annotation(dcterms:title "GRIIS Core Ontology")
 
 Declaration(Class(<http:/purl.obolibrary.org/obo/NOYO_0000001>))
