@@ -17,6 +17,13 @@ Annotation(dcterms:description "This ontology includes the base classes and prop
 Annotation(dcterms:license <https://creativecommons.org/licenses/by/4.0/>)
 Annotation(dcterms:title "GRIIS Core Ontology")
 
+Declaration(Class(<http://purl.obolibrary.org/obo/NOYO_0000019>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NOYO_0000020>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NOYO_0000021>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NOYO_0000022>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NOYO_0000023>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NOYO_0000024>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NOYO_0000026>))
 Declaration(Class(<http:/purl.obolibrary.org/obo/NOYO_0000001>))
 Declaration(Class(<http:/purl.obolibrary.org/obo/NOYO_0000002>))
 Declaration(Class(<http:/purl.obolibrary.org/obo/NOYO_0000003>))
@@ -30,6 +37,8 @@ Declaration(Class(<http:/purl.obolibrary.org/obo/NOYO_0000012>))
 Declaration(Class(<http:/purl.obolibrary.org/obo/NOYO_0000013>))
 Declaration(Class(<http:/purl.obolibrary.org/obo/NOYO_0000014>))
 Declaration(Class(<http:/purl.obolibrary.org/obo/NOYO_0000015>))
+Declaration(Class(<http:/purl.obolibrary.org/obo/NOYO_0000017>))
+Declaration(Class(<http:/purl.obolibrary.org/obo/NOYO_0000018>))
 Declaration(ObjectProperty(<http:/purl.obolibrary.org/obo/NOYO_0000007>))
 Declaration(ObjectProperty(<http:/purl.obolibrary.org/obo/NOYO_0000008>))
 Declaration(ObjectProperty(<http:/purl.obolibrary.org/obo/NOYO_0000016>))
@@ -77,6 +86,48 @@ AnnotationAssertion(rdfs:label <http:/purl.obolibrary.org/obo/NOYO_0000016> "fil
 #   Classes
 ############################
 
+# Class: <http://purl.obolibrary.org/obo/NOYO_0000019> (Canadian postal code part)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000019> "A location identifier that is about some geographical region in Canada, used to assist with postal delivery."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000019> "Canadian postal code part"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000019> <http://purl.obolibrary.org/obo/NOYO_0000026>)
+
+# Class: <http://purl.obolibrary.org/obo/NOYO_0000020> (postal address city)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000020> "a city identifier that is part of a postal address"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000020> "postal address city"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000020> <http://purl.obolibrary.org/obo/NOYO_0000026>)
+
+# Class: <http://purl.obolibrary.org/obo/NOYO_0000021> (postal address country)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000021> "A country identifier that is part of a postal address."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000021> "postal address country"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000021> <http://purl.obolibrary.org/obo/NOYO_0000026>)
+
+# Class: <http://purl.obolibrary.org/obo/NOYO_0000022> (Canadian first-order administrative region)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000022> "A location identifier that denotes a Canadian province or a Canadian territory."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000022> "Canadian first-order administrative region"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000022> <http://purl.obolibrary.org/obo/NOYO_0000026>)
+
+# Class: <http://purl.obolibrary.org/obo/NOYO_0000023> (Canadian census subdivision)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000023> "A location identifier that denotes a municipality (as determined by provincial/territorial legislation) or an area treated as a municipal equivalent for statistical purposes (e.g., Indian reserves, Indian settlements and unorganized territories)."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000023> "Canadian census subdivision"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000023> <http://purl.obolibrary.org/obo/NOYO_0000026>)
+
+# Class: <http://purl.obolibrary.org/obo/NOYO_0000024> (human identifier)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000024> "An identifier that denotes a particular homo sapiens."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000024> "human identifier"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000024> <http://purl.obolibrary.org/obo/IAO_0020000>)
+
+# Class: <http://purl.obolibrary.org/obo/NOYO_0000026> (location identifier)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000026> "An identifier that denotes a particular location."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000026> "location identifier"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000026> <http://purl.obolibrary.org/obo/IAO_0020000>)
+
 # Class: <http:/purl.obolibrary.org/obo/NOYO_0000001> (request)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http:/purl.obolibrary.org/obo/NOYO_0000001> "An information content entity representing the will of a person to have something done and specifications for the latter."@en)
@@ -98,9 +149,9 @@ SubClassOf(<http:/purl.obolibrary.org/obo/NOYO_0000003> <http://purl.obolibrary.
 
 # Class: <http:/purl.obolibrary.org/obo/NOYO_0000004> (address)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http:/purl.obolibrary.org/obo/NOYO_0000004> "An information content entity that is about the location of some entity. (TBD)"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http:/purl.obolibrary.org/obo/NOYO_0000004> "An information content entity that denotes the location of some entity. (TBD)"@en)
 AnnotationAssertion(rdfs:label <http:/purl.obolibrary.org/obo/NOYO_0000004> "address"@en)
-SubClassOf(<http:/purl.obolibrary.org/obo/NOYO_0000004> <http://purl.obolibrary.org/obo/IAO_0000030>)
+SubClassOf(<http:/purl.obolibrary.org/obo/NOYO_0000004> <http://purl.obolibrary.org/obo/NOYO_0000026>)
 
 # Class: <http:/purl.obolibrary.org/obo/NOYO_0000005> (service agreement negotiation)
 
@@ -163,6 +214,18 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http:/purl.obo
 AnnotationAssertion(rdfs:label <http:/purl.obolibrary.org/obo/NOYO_0000015> "informational filler"@en)
 SubClassOf(<http:/purl.obolibrary.org/obo/NOYO_0000015> <http:/purl.obolibrary.org/obo/NOYO_0000012>)
 SubClassOf(<http:/purl.obolibrary.org/obo/NOYO_0000015> ObjectSomeValuesFrom(<http:/purl.obolibrary.org/obo/NOYO_0000016> <http:/purl.obolibrary.org/obo/NOYO_0000014>))
+
+# Class: <http:/purl.obolibrary.org/obo/NOYO_0000017> (postal code)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http:/purl.obolibrary.org/obo/NOYO_0000017> "An address that is used to assist with postal delivery."@en)
+AnnotationAssertion(rdfs:label <http:/purl.obolibrary.org/obo/NOYO_0000017> "postal code"@en)
+SubClassOf(<http:/purl.obolibrary.org/obo/NOYO_0000017> <http:/purl.obolibrary.org/obo/NOYO_0000004>)
+
+# Class: <http:/purl.obolibrary.org/obo/NOYO_0000018> (Canadian postal code)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http:/purl.obolibrary.org/obo/NOYO_0000018> "A postal code information that is about some geographical region in Canada."@en)
+AnnotationAssertion(rdfs:label <http:/purl.obolibrary.org/obo/NOYO_0000018> "Canadian postal code"@en)
+SubClassOf(<http:/purl.obolibrary.org/obo/NOYO_0000018> <http:/purl.obolibrary.org/obo/NOYO_0000017>)
 
 
 )
