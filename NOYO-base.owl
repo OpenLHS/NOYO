@@ -10,7 +10,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/NOYO/NOYO-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/NOYO/releases/2023-05-02/NOYO-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/NOYO/releases/2023-05-03/NOYO-base.owl"/>
         <dc:contributor xml:lang="en">Adrien Barton</dc:contributor>
         <dc:contributor xml:lang="en">Jean-François Ethier</dc:contributor>
         <dc:contributor xml:lang="en">Paul Fabry</dc:contributor>
@@ -18,7 +18,7 @@
         <terms:description xml:lang="en">This ontology includes the base classes and properties (both external and locally created) used downstream by the others ontologies.</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:title>GRIIS Core Ontology</terms:title>
-        <owl:versionInfo>2023-05-02</owl:versionInfo>
+        <owl:versionInfo>2023-05-03</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -99,6 +99,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
@@ -108,6 +114,12 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000235 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000235"/>
     
 
 
@@ -154,6 +166,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000031 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000031"/>
@@ -172,18 +190,36 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000422 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000422"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000646 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000646"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0020000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020000"/>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9606 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NOYO_0000019 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOYO_0000019">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOYO_0000026"/>
-        <obo:IAO_0000115 xml:lang="en">A location identifier that is about some geographical region in Canada, used to assist with postal delivery.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">Canadian postal code part</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <obo:IAO_0000115 xml:lang="en">An identifier that denotes a geographical region on which is based the first three characters of a Canadian postal code.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">canadian forward sorting area code</rdfs:label>
     </owl:Class>
     
 
@@ -191,8 +227,14 @@
     <!-- http://purl.obolibrary.org/obo/NOYO_0000020 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOYO_0000020">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOYO_0000026"/>
-        <obo:IAO_0000115 xml:lang="en">a city identifier that is part of a postal address</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000422"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An identifier that denotes a city as part of a postal address.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">postal address city</rdfs:label>
     </owl:Class>
     
@@ -201,8 +243,14 @@
     <!-- http://purl.obolibrary.org/obo/NOYO_0000021 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOYO_0000021">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOYO_0000026"/>
-        <obo:IAO_0000115 xml:lang="en">A country identifier that is part of a postal address.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000422"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An identifier that denotes a country is part of a postal address.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">postal address country</rdfs:label>
     </owl:Class>
     
@@ -211,9 +259,9 @@
     <!-- http://purl.obolibrary.org/obo/NOYO_0000022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOYO_0000022">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOYO_0000026"/>
-        <obo:IAO_0000115 xml:lang="en">A location identifier that denotes a Canadian province or a Canadian territory.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">Canadian first-order administrative region</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <obo:IAO_0000115 xml:lang="en">An identifier that denotes a Canadian province or a Canadian territory.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">canadian first-order administrative region identifier</rdfs:label>
     </owl:Class>
     
 
@@ -221,9 +269,15 @@
     <!-- http://purl.obolibrary.org/obo/NOYO_0000023 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOYO_0000023">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOYO_0000026"/>
-        <obo:IAO_0000115 xml:lang="en">A location identifier that denotes a municipality (as determined by provincial/territorial legislation) or an area treated as a municipal equivalent for statistical purposes (e.g., Indian reserves, Indian settlements and unorganized territories).</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">Canadian census subdivision</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000235"/>
+                <owl:someValuesFrom rdf:resource="http:/purl.obolibrary.org/obo/NOYO_0000018"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An identifier that denotes a municipality (as determined by provincial/territorial legislation) or an area treated as a municipal equivalent for statistical purposes (e.g., Indian reserves, Indian settlements and unorganized territories).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">canadian census subdivision identifier</rdfs:label>
     </owl:Class>
     
 
@@ -238,12 +292,114 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NOYO_0000026 -->
+    <!-- http://purl.obolibrary.org/obo/NOYO_0000025 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOYO_0000026">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
-        <obo:IAO_0000115 xml:lang="en">An identifier that denotes a particular location.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">location identifier</rdfs:label>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOYO_0000025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000422"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/NOYO_0000020"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/NOYO_0000021"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/NOYO_0000022"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http:/purl.obolibrary.org/obo/NOYO_0000018"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A postal address that can be used to help the delivery of something in Canada.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">canadian postal address</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOYO_0000065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOYO_0000065">
+        <rdfs:subClassOf rdf:resource="http:/purl.obolibrary.org/obo/NOYO_0000011"/>
+        <rdfs:comment xml:lang="en">A statement validity temporal characterization specifying a temporal region at which point the statement begins to be considered valid.</rdfs:comment>
+        <rdfs:label xml:lang="en">statement validity beginning characterization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOYO_0000066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOYO_0000066">
+        <rdfs:subClassOf rdf:resource="http:/purl.obolibrary.org/obo/NOYO_0000011"/>
+        <rdfs:comment xml:lang="en">A statement validity temporal characterization specifying a temporal region at which point the statement ceases to be considered valid.</rdfs:comment>
+        <rdfs:label xml:lang="en">statement validity ending characterization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOYO_0000070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOYO_0000070">
+        <rdfs:subClassOf rdf:resource="http:/purl.obolibrary.org/obo/NOYO_0000010"/>
+        <obo:IAO_0000115 xml:lang="en">A process temporal specification that is about the birth date of an homo sapiens.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">human birth date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOYO_0000071 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOYO_0000071">
+        <rdfs:subClassOf rdf:resource="http:/purl.obolibrary.org/obo/NOYO_0000010"/>
+        <obo:IAO_0000115 xml:lang="en">A process temporal specification that is about the date of death of an homo sapiens.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">human death date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOYO_0000072 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOYO_0000072">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that denotes the biological sex of a human.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">human biological sex information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOYO_0000073 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOYO_0000073">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NOYO_0000072"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000209"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is intended to denote a biological sex or a gender identity.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">biological sex or gender identity information content entity</rdfs:label>
     </owl:Class>
     
 
@@ -251,6 +407,25 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000204 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000204">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000209 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000209"/>
     
 
 
@@ -286,16 +461,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000115 xml:lang="en">An information content entity that specifies a service agreement made between a request party and a service offer party. A service agreement specification can direct some processes that correspond to what has been agreed between the parties.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">service agreement specification</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http:/purl.obolibrary.org/obo/NOYO_0000004 -->
-
-    <owl:Class rdf:about="http:/purl.obolibrary.org/obo/NOYO_0000004">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOYO_0000026"/>
-        <obo:IAO_0000115 xml:lang="en">An information content entity that denotes the location of some entity. (TBD)</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">address</rdfs:label>
     </owl:Class>
     
 
@@ -352,6 +517,12 @@
 
     <owl:Class rdf:about="http:/purl.obolibrary.org/obo/NOYO_0000010">
         <rdfs:subClassOf rdf:resource="http:/purl.obolibrary.org/obo/NOYO_0000009"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A temporal specification that is about the occupation of a temporal interval by some processes.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">process temporal characterization</rdfs:label>
     </owl:Class>
@@ -423,22 +594,19 @@
     
 
 
-    <!-- http:/purl.obolibrary.org/obo/NOYO_0000017 -->
-
-    <owl:Class rdf:about="http:/purl.obolibrary.org/obo/NOYO_0000017">
-        <rdfs:subClassOf rdf:resource="http:/purl.obolibrary.org/obo/NOYO_0000004"/>
-        <obo:IAO_0000115 xml:lang="en">An address that is used to assist with postal delivery.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">postal code</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http:/purl.obolibrary.org/obo/NOYO_0000018 -->
 
     <owl:Class rdf:about="http:/purl.obolibrary.org/obo/NOYO_0000018">
-        <rdfs:subClassOf rdf:resource="http:/purl.obolibrary.org/obo/NOYO_0000017"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000646"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/NOYO_0000019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A postal code information that is about some geographical region in Canada.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">Canadian postal code</rdfs:label>
+        <rdfs:label xml:lang="en">canadian postal code</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 

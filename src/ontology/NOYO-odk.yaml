@@ -2,6 +2,7 @@ id: NOYO
 title: GRIIS Core Ontology
 github_org: OpenLHS
 repo: NOYO
+report_fail_on: None
 documentation:
   documentation_system: mkdocs
 release_artefacts:
