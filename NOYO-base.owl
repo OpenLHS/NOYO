@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/noyo/noyo-base.owl#"
-     xml:base="http://purl.obolibrary.org/obo/noyo/noyo-base.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/NOYO/NOYO-base.owl#"
+     xml:base="http://purl.obolibrary.org/obo/NOYO/NOYO-base.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -9,8 +9,8 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/noyo/noyo-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/noyo/releases/2023-05-03/noyo-base.owl"/>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/NOYO/NOYO-base.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/NOYO/releases/2023-05-03/NOYO-base.owl"/>
         <dc:contributor xml:lang="en">Adrien Barton</dc:contributor>
         <dc:contributor xml:lang="en">Jean-François Ethier</dc:contributor>
         <dc:contributor xml:lang="en">Paul Fabry</dc:contributor>

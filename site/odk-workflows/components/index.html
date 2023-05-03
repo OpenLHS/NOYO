@@ -525,24 +525,24 @@
 <h1 id="adding-components-to-an-odk-repo">Adding components to an ODK repo</h1>
 <p>For details on what components are, please see component section of <a href="../RepositoryFileStructure/">repository file structure document</a>.</p>
 <p>To add custom components to an ODK repo, please follow the following steps:</p>
-<p>1) Locate your odk yaml file and open it with your favourite text editor (src/ontology/noyo-odk.yaml)
+<p>1) Locate your odk yaml file and open it with your favourite text editor (src/ontology/NOYO-odk.yaml)
 2) Search if there is already a component section to the yaml file, if not add it accordingly, adding the name of your component:</p>
 <div class="highlight"><pre><span></span><code>components:
   products:
     - filename: your-component-name.owl
 </code></pre></div>
 <p>3) Add the component to your catalog file (src/ontology/catalog-v001.xml)</p>
-<div class="highlight"><pre><span></span><code>  &lt;uri name=&quot;http://purl.obolibrary.org/obo/noyo/components/your-component-name.owl&quot; uri=&quot;components/your-component-name.owl&quot;/&gt;
+<div class="highlight"><pre><span></span><code>  &lt;uri name=&quot;http://purl.obolibrary.org/obo/NOYO/components/your-component-name.owl&quot; uri=&quot;components/your-component-name.owl&quot;/&gt;
 </code></pre></div>
-<p>4) Add the component to the edit file (src/ontology/noyo-edit.obo)
+<p>4) Add the component to the edit file (src/ontology/NOYO-edit.obo)
 for .obo formats: </p>
-<div class="highlight"><pre><span></span><code>import: http://purl.obolibrary.org/obo/noyo/components/your-component-name.owl
+<div class="highlight"><pre><span></span><code>import: http://purl.obolibrary.org/obo/NOYO/components/your-component-name.owl
 </code></pre></div>
 <p>for .owl formats: </p>
-<div class="highlight"><pre><span></span><code>Import(&lt;http://purl.obolibrary.org/obo/noyo/components/your-component-name.owl&gt;)
+<div class="highlight"><pre><span></span><code>Import(&lt;http://purl.obolibrary.org/obo/NOYO/components/your-component-name.owl&gt;)
 </code></pre></div>
 <p>5) Refresh your repo by running <code>sh run.sh make update_repo</code> - this should create a new file in src/ontology/components.
-6) In your custom makefile (src/ontology/noyo.Makefile) add a goal for your custom make file. In this example, the goal is a ROBOT template.</p>
+6) In your custom makefile (src/ontology/NOYO.Makefile) add a goal for your custom make file. In this example, the goal is a ROBOT template.</p>
 <div class="highlight"><pre><span></span><code>$(COMPONENTSDIR)/your-component-name.owl: $(SRC) ../templates/your-component-template.tsv 
     $(ROBOT) template --template ../templates/your-component-template.tsv \
   annotate --ontology-iri $(ONTBASE)/$@ --output $(COMPONENTSDIR)/your-component-name.owl
