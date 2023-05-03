@@ -9,4 +9,4 @@ WHERE {
   OPTIONAL { ?cls def: ?def }  .
   FILTER contains(STR(?cls), "NOYO_")
   }
-  ORDER BY ?IRI
+ORDER BY ?IRI

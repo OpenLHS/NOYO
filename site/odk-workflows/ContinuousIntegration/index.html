@@ -525,14 +525,14 @@
 <h1 id="introduction-to-continuous-integration-workflows-with-odk">Introduction to Continuous Integration Workflows with ODK</h1>
 <p>Historically, most repos have been using Travis CI for continuous integration testing and building, but due to
 runtime restrictions, we recently switched a lot of our repos to GitHub actions. You can set up your repo with CI by adding 
-this to your configuration file (src/ontology/NOYO-odk.yaml):</p>
+this to your configuration file (src/ontology/noyo-odk.yaml):</p>
 <div class="highlight"><pre><span></span><code>ci:
   - github_actions
 </code></pre></div>
 <p>When <a href="../RepoManagement/">updateing your repo</a>, you will notice a new file being added: <code>.github/workflows/qc.yml</code>.</p>
 <p>This file contains your CI logic, so if you need to change, or add anything, this is the place!</p>
 <p>Alternatively, if your repo is in GitLab instead of GitHub, you can set up your repo with GitLab CI by adding 
-this to your configuration file (src/ontology/NOYO-odk.yaml):</p>
+this to your configuration file (src/ontology/noyo-odk.yaml):</p>
 <div class="highlight"><pre><span></span><code>ci:
   - gitlab-ci
 </code></pre></div>

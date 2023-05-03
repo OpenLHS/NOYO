@@ -24,7 +24,7 @@ The documentation is _not_ automatically updated from the Markdown, and needs to
 
 1. In your terminal, navigate to the edit directory of your ontology, e.g.:
    ```
-   cd NOYO/src/ontology
+   cd noyo/src/ontology
    ```
 2. Now you are ready to build the docs as follows:
    ```

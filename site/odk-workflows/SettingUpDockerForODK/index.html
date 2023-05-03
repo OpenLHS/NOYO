@@ -527,7 +527,7 @@
 but more often than not it will appear as something like an <code>Error 137</code>. There are two places you need to consider to set your memory:</p>
 <ol>
 <li>Your src/ontology/run.sh (or run.bat) file. You can set the memory in there by adding 
-<code>robot_java_args: '-Xmx8G'</code> to your src/ontology/NOYO-odk.yaml file, see for example <a href="https://github.com/INCATools/ontology-development-kit/blob/0e0aef2b26b8db05f5e78b7c38f807d04312d06a/configs/uberon-odk.yaml#L36">here</a>.</li>
+<code>robot_java_args: '-Xmx8G'</code> to your src/ontology/noyo-odk.yaml file, see for example <a href="https://github.com/INCATools/ontology-development-kit/blob/0e0aef2b26b8db05f5e78b7c38f807d04312d06a/configs/uberon-odk.yaml#L36">here</a>.</li>
 <li>Set your docker memory. By default, it should be about 10-20% more than your <code>robot_java_args</code> variable. You can manage your memory settings
 by right-clicking on the docker whale in your system bar--&gt;Preferences--&gt;Resources--&gt;Advanced, see picture below.</li>
 </ol>
