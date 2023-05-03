@@ -266,9 +266,5 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000073> "bi
 EquivalentClasses(<http://purl.obolibrary.org/obo/NOYO_0000073> ObjectUnionOf(<http://purl.obolibrary.org/obo/NOYO_0000072> <http://purl.obolibrary.org/obo/OMRSE_00000209>))
 SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000073> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
-# Class: <http://purl.obolibrary.org/obo/OMRSE_00000204> (social identity information content entity)
-
-SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000204> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/NCBITaxon_9606>))
-
 
 )
