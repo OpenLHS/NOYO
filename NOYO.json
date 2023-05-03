@@ -1,6 +1,6 @@
 {
   "graphs" : [ {
-    "id" : "http://purl.obolibrary.org/obo/NOYO.json",
+    "id" : "http://purl.obolibrary.org/obo/noyo.json",
     "meta" : {
       "basicPropertyValues" : [ {
         "pred" : "http://purl.org/dc/elements/1.1/contributor",
@@ -24,7 +24,7 @@
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
         "val" : "2023-05-03"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/NOYO/releases/2023-05-03/NOYO.json"
+      "version" : "http://purl.obolibrary.org/obo/noyo/releases/2023-05-03/noyo.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000001",

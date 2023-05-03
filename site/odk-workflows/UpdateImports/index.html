@@ -716,7 +716,7 @@ GO:0008151
 <li>You prefer to manage all your imported terms in a single file (rather than multiple files like in the "Using term files" workflow above).</li>
 <li>You wish to augment your imported ontologies with additional information. This requires a cautionary discussion.</li>
 </ol>
-<p>To enable this workflow, you add the following to your ODK config file (<code>src/ontology/NOYO-odk.yaml</code>), and <a href="../RepoManagement/">update the repository</a>:</p>
+<p>To enable this workflow, you add the following to your ODK config file (<code>src/ontology/noyo-odk.yaml</code>), and <a href="../RepoManagement/">update the repository</a>:</p>
 <div class="highlight"><pre><span></span><code>use_custom_import_module: TRUE
 </code></pre></div>
 <p>Now you can manage your imported terms directly in the custom external terms template, which is located at <code>src/templates/external_import.owl</code>. Note that this file is a <a href="http://robot.obolibrary.org/template">ROBOT template</a>, and can, in principle, be extended to include any axioms you like. Before extending the template, however, read the following carefully.</p>
@@ -774,7 +774,7 @@ When we use the base pipelines, we</p>
 2) We merge all base files into one big pile
 3) Then we extract a single module <code>imports/merged_import.owl</code></p>
 <p>The first implementation of this pipeline is PATO, see https://github.com/pato-ontology/pato/blob/master/src/ontology/pato-odk.yaml.</p>
-<p>To check if your ontology uses this method, check src/ontology/NOYO-odk.yaml to see if <code>use_base_merging: TRUE</code> is declared under <code>import_group</code></p>
+<p>To check if your ontology uses this method, check src/ontology/noyo-odk.yaml to see if <code>use_base_merging: TRUE</code> is declared under <code>import_group</code></p>
 <p>If your ontology uses Base Module approach, please use the following steps: </p>
 <p>First, add the term to be imported to the term file associated with it (see above "Using term files" section if this is not clear to you)</p>
 <p>Next, you navigate in your terminal to the ontology directory (underneath src in your hpo root directory). 
