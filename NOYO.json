@@ -22,9 +22,9 @@
         "val" : "GRIIS Core Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2023-05-03"
+        "val" : "2023-05-04"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/NOYO/releases/2023-05-03/NOYO.json"
+      "version" : "http://purl.obolibrary.org/obo/NOYO/releases/2023-05-04/NOYO.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000001",
@@ -2913,6 +2913,32 @@
         }
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/NOYO_0000030",
+      "lbl" : "characterizes",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "A characterizes B means that A is about a main feature or quality of B."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NOYO_0000031",
+      "lbl" : "is characterized by",
+      "type" : "PROPERTY"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NOYO_0000032",
+      "lbl" : "temporally characterizes",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "A temporally characterizes B means that A is about a maintemporal feature or quality of B."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NOYO_0000033",
+      "lbl" : "is temporally characterized by",
+      "type" : "PROPERTY"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/NOYO_0000065",
       "lbl" : "statement validity beginning characterization",
       "type" : "CLASS",
@@ -4312,6 +4338,18 @@
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/IAO_0000136"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/NOYO_0000030",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000136"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NOYO_0000032",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/NOYO_0000030"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NOYO_0000033",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/NOYO_0000031"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/OBI_0000299",
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0000057"
@@ -4407,6 +4445,10 @@
       "sub" : "http://purl.obolibrary.org/obo/NOYO_0000007",
       "pred" : "inverseOf",
       "obj" : "http://purl.obolibrary.org/obo/NOYO_0000008"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NOYO_0000030",
+      "pred" : "inverseOf",
+      "obj" : "http://purl.obolibrary.org/obo/NOYO_0000031"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RO_0000052",
       "pred" : "inverseOf",

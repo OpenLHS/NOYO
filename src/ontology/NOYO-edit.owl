@@ -46,6 +46,10 @@ Declaration(Class(<http://purl.obolibrary.org/obo/NOYO_0000073>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/NOYO_0000007>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/NOYO_0000008>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/NOYO_0000016>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/NOYO_0000030>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/NOYO_0000031>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/NOYO_0000032>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/NOYO_0000033>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -83,6 +87,28 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000008> "is
 # Object Property: <http://purl.obolibrary.org/obo/NOYO_0000016> (fills)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000016> "fills"@en)
+
+# Object Property: <http://purl.obolibrary.org/obo/NOYO_0000030> (characterizes)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000030> "A characterizes B means that A is about a main feature or quality of B."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000030> "characterizes"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/NOYO_0000030> <http://purl.obolibrary.org/obo/IAO_0000136>)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/NOYO_0000030> <http://purl.obolibrary.org/obo/NOYO_0000031>)
+
+# Object Property: <http://purl.obolibrary.org/obo/NOYO_0000031> (is characterized by)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000031> "is characterized by"@en)
+
+# Object Property: <http://purl.obolibrary.org/obo/NOYO_0000032> (temporally characterizes)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000032> "A temporally characterizes B means that A is about a maintemporal feature or quality of B."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000032> "temporally characterizes"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/NOYO_0000032> <http://purl.obolibrary.org/obo/NOYO_0000030>)
+
+# Object Property: <http://purl.obolibrary.org/obo/NOYO_0000033> (is temporally characterized by)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000033> "is temporally characterized by"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/NOYO_0000033> <http://purl.obolibrary.org/obo/NOYO_0000031>)
 
 
 
