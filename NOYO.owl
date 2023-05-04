@@ -14,14 +14,14 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/NOYO.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/NOYO/releases/2023-05-03/NOYO.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/NOYO/releases/2023-05-04/NOYO.owl"/>
         <dc:contributor xml:lang="en">Adrien Barton</dc:contributor>
         <dc:contributor xml:lang="en">Jean-François Ethier</dc:contributor>
         <dc:contributor xml:lang="en">Paul Fabry</dc:contributor>
         <terms:description xml:lang="en">This ontology includes the base classes and properties (both external and locally created) used downstream by the others ontologies.</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:title>GRIIS Core Ontology</terms:title>
-        <owl:versionInfo>2023-05-03</owl:versionInfo>
+        <owl:versionInfo>2023-05-04</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -830,6 +830,44 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOYO_0000016">
         <rdfs:label xml:lang="en">fills</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOYO_0000030 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOYO_0000030">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/NOYO_0000031"/>
+        <obo:IAO_0000115 xml:lang="en">A characterizes B means that A is about a main feature or quality of B.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">characterizes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOYO_0000031 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOYO_0000031">
+        <rdfs:label xml:lang="en">is characterized by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOYO_0000032 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOYO_0000032">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOYO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">A temporally characterizes B means that A is about a maintemporal feature or quality of B.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">temporally characterizes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOYO_0000033 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOYO_0000033">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOYO_0000031"/>
+        <rdfs:label xml:lang="en">is temporally characterized by</rdfs:label>
     </owl:ObjectProperty>
     
 

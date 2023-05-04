@@ -45,8 +45,12 @@ You can find descriptions of the standard ontology engineering workflows [here](
 
 ## Properties
 
-|IRI                                           |value                                    |def|
-|----------------------------------------------|-----------------------------------------|---|
-|NOYO_0000016                                  |fills                                    |   |
-|NOYO_0000008                                  |is directed by                           |   |
-|NOYO_0000007                                  |directs                                  |   |
+|IRI         |value                         |def                                                                                       |
+|------------|------------------------------|------------------------------------------------------------------------------------------|
+|NOYO_0000007|directs                       |                                                                                          |
+|NOYO_0000008|is directed by                |                                                                                          |
+|NOYO_0000016|fills                         |                                                                                          |
+|NOYO_0000030|characterizes                 |A characterizes B means that A is about a main feature or quality of B.                   |
+|NOYO_0000031|is characterized by           |                                                                                          |
+|NOYO_0000032|temporally characterizes      |A temporally characterizes B means that A is about a maintemporal feature or quality of B.|
+|NOYO_0000033|is temporally characterized by|                                                                                          |
