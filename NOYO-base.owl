@@ -10,7 +10,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/NOYO/NOYO-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/NOYO/releases/2023-05-04/NOYO-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/NOYO/releases/2023-05-05/NOYO-base.owl"/>
         <dc:contributor xml:lang="en">Adrien Barton</dc:contributor>
         <dc:contributor xml:lang="en">Jean-François Ethier</dc:contributor>
         <dc:contributor xml:lang="en">Paul Fabry</dc:contributor>
@@ -18,7 +18,7 @@
         <terms:description xml:lang="en">This ontology includes the base classes and properties (both external and locally created) used downstream by the others ontologies.</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:title>GRIIS Core Ontology</terms:title>
-        <owl:versionInfo>2023-05-04</owl:versionInfo>
+        <owl:versionInfo>2023-05-05</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -552,6 +552,56 @@
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A postal address that can be used to help the delivery of something in Canada.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">canadian postal address</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOYO_0000049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOYO_0000049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOYO_0000013"/>
+        <obo:IAO_0000115 xml:lang="en">A statement whom agent considering it true is a state.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">state sanctioned statement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOYO_0000050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOYO_0000050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOYO_0000013"/>
+        <obo:IAO_0000115 xml:lang="en">A statement about the information surrounding the birth of a human.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">birth statement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOYO_0000051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOYO_0000051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOYO_0000013"/>
+        <obo:IAO_0000115 xml:lang="en">A statement about the information surrounding the death of a human.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">death statement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOYO_0000052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOYO_0000052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOYO_0000049"/>
+        <obo:IAO_0000115 xml:lang="en">A state sanctioned statement about the information surrounding the birth of a human.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">civil birth record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOYO_0000053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOYO_0000053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOYO_0000049"/>
+        <obo:IAO_0000115 xml:lang="en">A state sanctioned statement about the information surrounding the death of a human.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">civil death record</rdfs:label>
     </owl:Class>
     
 
