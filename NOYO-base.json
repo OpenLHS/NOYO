@@ -496,9 +496,17 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/NOYO_0000013"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/NOYO_0000050",
+      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/NOYO_0000051",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/NOYO_0000013"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NOYO_0000051",
+      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/NOYO_0000065",
       "pred" : "is_a",
