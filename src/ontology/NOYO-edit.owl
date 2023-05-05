@@ -245,7 +245,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000023> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/NOYO_0000024> (human identifier)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000024> "An identifier that denotes a particular homo sapiens."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000024> "An identifier that denotes a particular human being."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000024> "human identifier"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000024> <http://purl.obolibrary.org/obo/IAO_0020000>)
 
@@ -281,13 +281,13 @@ SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000051> <http://purl.obolibrary
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000052> "A state sanctioned statement about the information surrounding the birth of a human."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000052> "civil birth record"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000052> <http://purl.obolibrary.org/obo/NOYO_0000049>)
+EquivalentClasses(<http://purl.obolibrary.org/obo/NOYO_0000052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NOYO_0000049> <http://purl.obolibrary.org/obo/NOYO_0000050>))
 
 # Class: <http://purl.obolibrary.org/obo/NOYO_0000053> (civil death record)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000053> "A state sanctioned statement about the information surrounding the death of a human."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000053> "civil death record"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000053> <http://purl.obolibrary.org/obo/NOYO_0000049>)
+EquivalentClasses(<http://purl.obolibrary.org/obo/NOYO_0000053> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/NOYO_0000049> <http://purl.obolibrary.org/obo/NOYO_0000051>))
 
 # Class: <http://purl.obolibrary.org/obo/NOYO_0000065> (statement validity beginning characterization)
 
