@@ -36,10 +36,10 @@ AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000599>
 Datatype: <http://purl.obolibrary.org/obo/ro/idrange/1>
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000597> "Paul Fabry"@en
+        <http://purl.obolibrary.org/obo/IAO_0000597> "fabp1701"@en
     
     EquivalentTo: 
-        xsd:integer[> 25 , <= 999999]
+        xsd:integer[> 73 , <= 999999]
     
     
 Datatype: <http://purl.obolibrary.org/obo/ro/idrange/2>

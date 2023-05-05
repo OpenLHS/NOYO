@@ -25,9 +25,9 @@
         "val" : "GRIIS Core Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2023-05-04"
+        "val" : "2023-05-05"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/NOYO/releases/2023-05-04/NOYO-base.json"
+      "version" : "http://purl.obolibrary.org/obo/NOYO/releases/2023-05-05/NOYO-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/NOYO_0000001",
@@ -260,6 +260,51 @@
       "lbl" : "is temporally characterized by",
       "type" : "PROPERTY"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/NOYO_0000049",
+      "lbl" : "state sanctioned statement",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A statement whom agent considering it true is a state."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NOYO_0000050",
+      "lbl" : "birth statement",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A statement about the information surrounding the birth of a human."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NOYO_0000051",
+      "lbl" : "death statement",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A statement about the information surrounding the death of a human."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NOYO_0000052",
+      "lbl" : "civil birth record",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A state sanctioned statement about the information surrounding the birth of a human."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NOYO_0000053",
+      "lbl" : "civil death record",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A state sanctioned statement about the information surrounding the death of a human."
+        }
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/NOYO_0000065",
       "lbl" : "statement validity beginning characterization",
       "type" : "CLASS",
@@ -442,6 +487,26 @@
       "sub" : "http://purl.obolibrary.org/obo/NOYO_0000025",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/IAO_0000422"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NOYO_0000049",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NOYO_0000013"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NOYO_0000050",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NOYO_0000013"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NOYO_0000051",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NOYO_0000013"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NOYO_0000052",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NOYO_0000049"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NOYO_0000053",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NOYO_0000049"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/NOYO_0000065",
       "pred" : "is_a",
