@@ -512,7 +512,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOYO_0000024">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
-        <obo:IAO_0000115 xml:lang="en">An identifier that denotes a particular homo sapiens.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An identifier that denotes a particular human being.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">human identifier</rdfs:label>
     </owl:Class>
     
@@ -589,7 +589,14 @@
     <!-- http://purl.obolibrary.org/obo/NOYO_0000052 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOYO_0000052">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOYO_0000049"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NOYO_0000049"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NOYO_0000050"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <obo:IAO_0000115 xml:lang="en">A state sanctioned statement about the information surrounding the birth of a human.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">civil birth record</rdfs:label>
     </owl:Class>
@@ -599,7 +606,14 @@
     <!-- http://purl.obolibrary.org/obo/NOYO_0000053 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOYO_0000053">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOYO_0000049"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NOYO_0000049"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NOYO_0000051"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <obo:IAO_0000115 xml:lang="en">A state sanctioned statement about the information surrounding the death of a human.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">civil death record</rdfs:label>
     </owl:Class>

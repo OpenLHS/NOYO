@@ -221,7 +221,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "An identifier that denotes a particular homo sapiens."
+          "val" : "An identifier that denotes a particular human being."
         }
       }
     }, {
@@ -500,14 +500,6 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/NOYO_0000013"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/NOYO_0000052",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/NOYO_0000049"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/NOYO_0000053",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/NOYO_0000049"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/NOYO_0000065",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/NOYO_0000011"
@@ -559,6 +551,13 @@
       "sub" : "http://purl.obolibrary.org/obo/NOYO_0000030",
       "pred" : "inverseOf",
       "obj" : "http://purl.obolibrary.org/obo/NOYO_0000031"
+    } ],
+    "logicalDefinitionAxioms" : [ {
+      "definedClassId" : "http://purl.obolibrary.org/obo/NOYO_0000052",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/NOYO_0000049", "http://purl.obolibrary.org/obo/NOYO_0000050" ]
+    }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/NOYO_0000053",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/NOYO_0000049", "http://purl.obolibrary.org/obo/NOYO_0000051" ]
     } ]
   } ]
 }
